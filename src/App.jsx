@@ -3,11 +3,11 @@ function App() {
     <main className="min-h-screen bg-slate-950 text-white">
       <section className="mx-auto max-w-5xl px-6 py-24">
         <p className="mb-4 text-sm uppercase tracking-widest text-blue-300">
-          Final Year IT Student · Cybersecurity · Full Stack Development
+          Final Year IT Student - Cybersecurity - Full Stack Development
         </p>
 
         <h1 className="mb-6 text-5xl font-bold">
-          Hi, I’m Robin Dhaliwal.
+          Hi, I'm Robin Dhaliwal.
         </h1>
 
         <p className="mb-8 max-w-2xl text-lg text-slate-300">
@@ -20,7 +20,7 @@ function App() {
           <a className="rounded-xl bg-blue-500 px-5 py-3 font-medium text-white" href="#projects">
             View Projects
           </a>
-          <a className="rounded-xl border border-slate-600 px-5 py-3 font-medium" href="/resume.pdf">
+          <a className="rounded-xl border border-slate-600 px-5 py-3 font-medium" href={`${import.meta.env.BASE_URL}resume.pdf`}>
             Download Resume
           </a>
         </div>
@@ -36,7 +36,7 @@ function App() {
               Built a secure ecommerce platform with CakePHP, MySQL, Stripe payment verification,
               admin product management, order emails, stock handling, and cPanel deployment.
             </p>
-            <p className="text-sm text-blue-300">CakePHP · MySQL · Stripe · JavaScript · cPanel</p>
+            <p className="text-sm text-blue-300">CakePHP - MySQL - Stripe - JavaScript - cPanel</p>
           </div>
 
           <div className="rounded-2xl bg-slate-900 p-6 shadow-lg">
@@ -45,7 +45,7 @@ function App() {
               Developed a product store with AJAX cart updates, stock validation,
               responsive UI, admin management, and improved checkout UX.
             </p>
-            <p className="text-sm text-blue-300">PHP · MySQL · JavaScript · Tailwind · Git</p>
+            <p className="text-sm text-blue-300">PHP - MySQL - JavaScript - Tailwind - Git</p>
           </div>
         </div>
       </section>
