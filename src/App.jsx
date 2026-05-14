@@ -2,10 +2,10 @@ import { useEffect, useState } from "react"
 
 const ecommerceProject = {
   title: "E-commerce Website",
-  kicker: "University commerce build",
+  kicker: "Full stack commerce build",
   description:
-    "A responsive e-commerce experience focused on structured browsing, product clarity, input validation, and secure development habits.",
-  stack: ["HTML", "CSS", "JavaScript", "Responsive UI", "Input validation", "Secure coding"],
+    "A full stack e-commerce project focused on structured browsing, product clarity, secure input handling, authentication, authorisation, and reliability across a hosted environment.",
+  stack: ["PHP", "CakePHP", "JavaScript", "SQL", "HTML/CSS", "Input validation", "Authentication", "Secure payments"],
   link: "https://u25s2207.iedev.org/",
   screenshots: [
     {
@@ -19,31 +19,31 @@ const ecommerceProject = {
       description: "Structured product listings with clear spacing, hierarchy, and interaction states.",
     },
     {
-      title: "Validation",
+      title: "Secure Flows",
       label: "03",
-      description: "User input flows shaped by validation and secure development considerations.",
+      description: "User input, authentication, authorisation, and payment flows shaped by secure development practices.",
     },
   ],
   contributions: [
     "Designed responsive layouts that adapt cleanly across desktop and mobile screens.",
-    "Built structured navigation, product listing sections, and interactive front-end components.",
-    "Applied input validation and secure coding concepts to reduce avoidable user input issues.",
-    "Used version control and iterative testing to refine the project over time.",
+    "Built structured navigation, product listing sections, interactive front-end components, and full stack application flows.",
+    "Applied input validation, authentication, authorisation, and secure payment handling practices.",
+    "Troubleshot issues across local and hosted environments while improving reliability, security, and performance.",
   ],
 }
 
 const skillGroups = [
   {
-    title: "Programming",
-    skills: ["Python", "Java", "JavaScript", "HTML", "CSS", "C"],
+    title: "Development",
+    skills: ["PHP", "CakePHP", "JavaScript", "SQL", "HTML/CSS", "Python", "Java"],
   },
   {
-    title: "Security",
-    skills: ["Pen testing fundamentals", "Network protocols", "Vulnerability awareness", "Secure coding"],
+    title: "Cybersecurity",
+    skills: ["Wireshark", "Nmap", "Kali Linux", "Burp Suite", "Metasploit", "Vulnerability assessment"],
   },
   {
-    title: "Workflow",
-    skills: ["Git", "Version control", "VS Code", "Database basics", "Debugging"],
+    title: "Infrastructure & Workflow",
+    skills: ["Networking", "Traffic inspection", "Git", "Hosted environments", "Debugging", "IT troubleshooting"],
   },
 ]
 
@@ -99,7 +99,7 @@ function Navbar() {
 }
 
 function Marquee() {
-  const items = ["Cybersecurity", "Secure Coding", "Responsive Web", "Python Automation", "Networking", "Monash IT"]
+  const items = ["Cybersecurity", "Networking", "IT Infrastructure", "Technology Consulting", "Full Stack Web", "Secure Development"]
 
   return (
     <div className="overflow-hidden border-y border-white/10 bg-[#f5bd50] py-3 text-[#07090b]">
@@ -130,7 +130,7 @@ function HeroVisual() {
       <div className="relative mt-8 grid gap-5">
         {[
           ["status", "available for internship / grad roles"],
-          ["focus", "cybersecurity + software development"],
+          ["focus", "cybersecurity + networking + IT support"],
           ["location", "melbourne, vic"],
         ].map(([label, value]) => (
           <div key={label} className="rounded-2xl border border-white/10 bg-black/25 p-4">
@@ -142,8 +142,8 @@ function HeroVisual() {
 
       <div className="relative mt-8 rounded-2xl border border-[#77ffe1]/20 bg-[#77ffe1]/10 p-4 font-mono text-sm leading-7 text-[#a9fff0]">
         <p>$ scan --profile robin</p>
-        <p className="text-[#f7f1df]">found: secure thinker, builder, debugger</p>
-        <p className="text-[#f5bd50]">ready: project work + IT opportunities</p>
+        <p className="text-[#f7f1df]">found: secure thinker, systems builder, troubleshooter</p>
+        <p className="text-[#f5bd50]">ready: cybersecurity, support, networking, consulting</p>
       </div>
     </div>
   )
@@ -201,10 +201,10 @@ function HomePage() {
               Final Year IT Student - Cybersecurity Major
             </p>
             <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-normal text-[#f7f1df] sm:text-7xl lg:text-8xl">
-              Building sharp, secure digital systems.
+              Building, securing, and troubleshooting real systems.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-[#c8c0ad]">
-              I am Robin Dhaliwal, a Monash University Bachelor of IT student focused on cybersecurity, secure software development, and practical web projects.
+              I am Robin Dhaliwal, a final year Information Technology student at Monash University majoring in Cybersecurity, with a strong interest in cybersecurity, networking, IT infrastructure, and technology consulting.
             </p>
 
             <div className="mt-9 flex flex-wrap gap-3">
@@ -257,7 +257,7 @@ function HomePage() {
           <article className="mt-10 grid overflow-hidden rounded-[2rem] border border-white/10 bg-[#151b20] lg:grid-cols-[1fr_0.9fr]">
             <div className="p-6 sm:p-8 lg:p-10">
               <p className="text-sm font-black uppercase tracking-[0.28em] text-[#77ffe1]">{ecommerceProject.kicker}</p>
-              <h3 className="mt-5 max-w-2xl text-4xl font-black leading-tight">A practical web store built with usability and secure input handling in mind.</h3>
+              <h3 className="mt-5 max-w-2xl text-4xl font-black leading-tight">A practical full stack web store built with security, reliability, and performance in mind.</h3>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-[#c8c0ad]">{ecommerceProject.description}</p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -277,7 +277,7 @@ function HomePage() {
 
       <section id="skills" className="mx-auto max-w-7xl scroll-mt-24 px-5 py-20">
         <p className="text-sm font-black uppercase tracking-[0.32em] text-[#77ffe1]">Capability stack</p>
-        <h2 className="mt-4 text-4xl font-black">Skills that connect code, systems, and security.</h2>
+        <h2 className="mt-4 text-4xl font-black">Skills that connect code, networks, infrastructure, and security.</h2>
         <div className="mt-10 grid gap-5 lg:grid-cols-3">
           {skillGroups.map((group) => (
             <section key={group.title} className="rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-6">
@@ -298,19 +298,19 @@ function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-8 px-5 py-20 lg:grid-cols-2">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.32em] text-[#f5bd50]">Experience</p>
-            <h2 className="mt-4 text-4xl font-black">Reliable in high-pressure environments.</h2>
+            <h2 className="mt-4 text-4xl font-black">Communication and adaptability under pressure.</h2>
             <div className="mt-8 rounded-[1.4rem] border border-white/10 bg-[#151b20] p-6">
               <p className="text-sm font-black uppercase tracking-[0.28em] text-[#77ffe1]">Jan 2023 - Present</p>
               <h3 className="mt-4 text-2xl font-black">Crew Member - McDonald's, Braeside VIC</h3>
               <p className="mt-4 leading-8 text-[#c8c0ad]">
-                Worked in high-pressure team environments, followed structured procedures and quality standards, handled transactions accurately, and demonstrated reliability, attendance, and adaptability.
+                Customer-facing work has helped me build strong communication, teamwork, and adaptability in fast-paced environments while following structured procedures and quality standards.
               </p>
             </div>
           </div>
 
           <div id="contact" className="scroll-mt-24">
             <p className="text-sm font-black uppercase tracking-[0.32em] text-[#77ffe1]">Contact</p>
-            <h2 className="mt-4 text-4xl font-black">Let’s build something useful.</h2>
+            <h2 className="mt-4 text-4xl font-black">Seeking cybersecurity, IT support, networking, infrastructure, and consulting roles.</h2>
             <div className="mt-8 rounded-[1.4rem] border border-white/10 bg-[#151b20] p-6">
               <p className="text-[#c8c0ad]">Melbourne, VIC</p>
               <p className="mt-3 text-[#c8c0ad]">
@@ -368,7 +368,7 @@ function EcommerceProjectPage() {
           <p className="text-sm font-black uppercase tracking-[0.32em] text-[#f5bd50]">Contributions</p>
           <h2 className="mt-4 text-4xl font-black">What I contributed</h2>
           <p className="mt-5 leading-8 text-[#c8c0ad]">
-            The project connects front-end development, security awareness, and practical testing across a complete university website build.
+            The project connects full stack web development, secure coding practices, hosted environment troubleshooting, and practical testing across a complete university website build.
           </p>
         </div>
 
